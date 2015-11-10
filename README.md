@@ -8,4 +8,4 @@ Our goal is to create a challenge that is fun, yet as difficult as possible.
 
 ## Contributors
 
-If you have some ideas for riddles, cryptography challenges, puzzles, or anything of the sort. Please email: swampert@yahoo.com
+If you have some ideas for riddles, cryptography challenges, puzzles, or anything of the sort, you can contact us at *email will be setup very soon*.
