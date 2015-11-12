@@ -1,18 +1,21 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<link rel="stylesheet" href="css/matrix.min.css">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Bieldy</title>
-  </head>
-
-<body>
-    <canvas style="position: absolute" id="DigiRain"></canvas>
+< !DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" > < html xmlns =
+    "http://www.w3.org/1999/xhtml" > < head > < link rel = "stylesheet"
+href = "css/matrix.min.css" > < meta http - equiv = "Content-Type"
+content = "text/html; charset=utf-8" / > < title > Bieldy < /title>
+  </head >
+    < body > < canvas style = "position: absolute"
+id = "DigiRain" > <
+    /canvas>
 		<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 		<div style="position: relative; margin: 0 auto;">
       <!-- Basic Crypto -->
-      <p align="center" style="color:white"><strong>"A B C, it's easy as, 1 2 3..."</strong></p>
-    <p align="center" style="color:white"><pre align="center" style="color:white; font-family: serif;">20 08 05   16 01 19 19 23 15 18 04   09 19   "16 09 26 26 01".</pre></p>
+      <p align="center" style="color:white"><strong>"A B C, it's easy as, 1 2 3..."</strong >
+    <
+    /p>
+    <p align="center" style="color:white"><pre align="center" style="color:white; font-family: serif;">20 08 05   16 01 19 19 23 15 18 04   09 19   "16 09 26 26 01".</pre >
+    <
+    /p>
       
       <script>
 
@@ -26,59 +29,62 @@ pass[3]="IdYYlPAbDpJJRYV"
 pass[4]="5BhA22Gd1ecDAV7R"
 pass[5]="31BhA22Gd1ecDAV7"
 
-//configure extension to reflect the extension type of the target web page (ie: .htm or .html)
-var extension=".html"
-var enablelocking=0
-var numletter="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-var temp3=''
-var cur=0
+/ /
+    configure extension to reflect the extension type of the target web page(ie:
+        .htm or.html)
+var extension = ".html"
+var enablelocking = 0
+var numletter =
+    "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+var temp3 = ''
+var cur = 0
 
-
-function max(which){
-return (pass[Math.ceil(which)+(3&15)].substring(0,1))
+function max(which) {
+    return (pass[Math.ceil(which) + (3 & 15)].substring(0, 1))
 }
 
-function testit(input){
-temp=numletter.indexOf(input)
-var temp2=temp^parseInt(pass[phase1-1+(1|3)].substring(0,2))
-temp2=numletter.substring(temp2,temp2+1)
-return (temp2)
+function testit(input) {
+    temp = numletter.indexOf(input)
+    var temp2 = temp ^ parseInt(pass[phase1 - 1 + (1 | 3)].substring(0, 2))
+    temp2 = numletter.substring(temp2, temp2 + 1)
+    return (temp2)
 }
 
-
-function submitentry(){
-t3=''
-verification=document.password1.password2.value
-phase1=Math.ceil(Math.random())-6+(2<<2)
-var indicate=true
-for (i=(1&2);i<window.max(Math.LOG10E);i++)
-t3+=testit(verification.charAt(i))
-for (i=(1&2);i<lim;i++){
-if (t3.charAt(i)!=pass[phase1+Math.round(Math.sin(Math.PI/2)-1)].charAt(i))
-indicate=false
-}
-if (verification.length!=window.max(Math.LOG10E))
-indicate=false
-if (indicate)
-window.location=verification+extension
-else
-alert("Invalid password. Please try again")
-}
-</script>
+function submitentry() {
+        t3 = ''
+        verification = document.password1.password2.value
+        phase1 = Math.ceil(Math.random()) - 6 + (2 << 2)
+        var indicate = true
+        for (i = (1 & 2); i < window.max(Math.LOG10E); i++) t3 += testit(
+            verification.charAt(i))
+        for (i = (1 & 2); i < lim; i++) {
+            if (t3.charAt(i) != pass[phase1 + Math.round(Math.sin(Math.PI / 2) -
+                1)].charAt(i)) indicate = false
+        }
+        if (verification.length != window.max(Math.LOG10E)) indicate = false
+        if (indicate) window.location = verification + extension
+        else alert("Invalid password. Please try again")
+    } <
+    /script>
 
 
 
 <table border="0" cellspacing="0" cellpadding="0" bgcolor="transparent" align="center">
   <tr>
-    <td width="100%"><form name="password1"><div align="center"><center><p><strong></strong><input
-      type="text" name="password2" size="15"><br>
-      <input type="button" value="Submit" onClick="submitentry()"></p>
-      </center></div>
-    </form>
-    </td>
-  </tr>
-</table>
+    <td width="100%"><form name="password1"><div align="center"><center><p><strong></strong >
+    < input
+type = "text"
+name = "password2"
+size = "15" > < br > < input type = "button"
+value = "Submit"
+onClick = "submitentry()" > < /p>
+      </center > < /div>
+    </form > <
+    /td>
+  </tr > < /table>
       
-      </body>
-	<script type="text/javascript" src="js/matrix.min.js" async defer></script>
-  </html>
+      </body > < script type =
+    "text/javascript"
+src = "js/matrix.min.js"
+async defer > < /script>
+  </html >
